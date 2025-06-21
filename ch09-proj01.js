@@ -4,12 +4,12 @@ window.onload = () => {
 
     for (let file of files) {
         const img = document.createElement("img");
-        img.src = `images/${file}.jpg`;
+        img.src = `enhanced-media-player/images/${file}.jpg`;
         img.alt = file;
         img.className = "thumb";
         img.addEventListener("click", () => {
             video.pause();
-            video.src = `media/${file}.mp4`;
+            video.src = `enhanced-media-player/media/${file}.mp4`;
             video.load();
             video.play();
         });
